@@ -26,14 +26,14 @@
                         <input type="text" placeholder="Type [/] to search">
                     </div>
 
-                    <div class="copilot">
+                    <div class="copilot" title="Copilot">
                         <a href="#" class="copilot-logo hover"><i class="fa-solid fa-robot"></i></a>
-                        <a href="#" class="copilot-angle hover"><i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="copilot-angle create-new hover"><i class="fa-solid fa-angle-down"></i></a>
                     </div>
 
                     <div class="vertical-line"></div>
 
-                    <div class="new hover">
+                    <div class="new hover" title="Create">
                         <a href=""><i class="fa-solid fa-plus"></i></a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-caret-down-fill create" viewBox="0 0 16 16">
@@ -42,15 +42,15 @@
                         </svg>
                     </div>
 
-                    <div class="issue hover">
+                    <div class="issue hover" title="Your issues">
                         <i class="fa-regular fa-circle-dot"></i>
                     </div>
 
-                    <div class="pull-request hover">
+                    <div class="pull-request hover" title="Your pull-request">
                         <i class="fa-solid fa-code-pull-request"></i>
                     </div>
 
-                    <div class="notification hover">
+                    <div class="notification hover" title="Your notifications">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="profile">
@@ -85,20 +85,41 @@
             </div>
         </div>
     </header>
+    
     <main>
         <section class="hero">
             <div class="hero-container">
                 <div class="hero-profilebox">
                     <div class="hero-profilebox-imgbox">
-                        <img src="./assets/img/logo.png" width="300" alt="Logo img" loading="lazy">
-                        <i class="fa-regular fa-face-smile smile"></i>
+                        <div class="sucksbox">
+                            <img src="./assets/img/logo.png" width="300" alt="Logo img" loading="lazy">
+                            <i class="fa-regular fa-face-smile smile"></i>
+                            <a href="#" style="text-decoration: none;" class="status">Set Status</a>
+                        </div>
+                        <h4>IdentityNull</h4>
+                        <p>IdentityNull - he/him</p>
+                        <div class="btn-box">
+                            <button class="followbtn">Follow</button>
+                            <button class="sponsorbtn"><i class="fa-regular fa-heart"></i>Sponsor</button>
+                        </div>
+                        <p class="description">I'm a FrontEnd Engineer developer ❤️ Open-source lover!</p>
                     </div>
-                    <h4>IdentityNull</h4>
-                    <p>IdentityNull - he/him</p>
-                    <button>Edit Profile</button>
                     <div class="hero-profilebox-follower">
-                        <p><span>0</span>Followers</p>
-                        <p><span>2</span>Following</p>
+                        <p><span>72</span>Followers</p>
+                        <p><span>43</span>Following</p>
+                    </div>
+                    <div class="hero-horizantal-line"></div>
+                    <div class="achievements">
+                        <div class="achievements-title">
+                            <p>Achievements</p>
+                        </div>
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
+                        <img src="./assets/img/smth.png" alt="logo" loading="lazy" width="64" height="64">
                     </div>
                 </div>
                 <div class="hero-repositorybox">
@@ -112,74 +133,181 @@
                                 <a href="#">Fashion</a>
                                 <p>Public</p>
                             </div>
-                            <p>CSS, HTML</p>
+                            <div class="lang">
+                                <p>CSS, HTML</p>
+                                <div class="purple"></div>
+                            </div>
                         </div>
                         <div class="hero-repositorybox-popular-box">
                             <div class="hero-repositorybox-popular-box-title">
                                 <a href="#">NFT Market</a>
                                 <p>Public</p>
                             </div>
-                            <p>CSS, HTML</p>
+                            <div class="lang">
+                                <p>CSS, HTML</p>
+                                <div class="green"></div>
+                            </div>
                         </div>
                         <div class="hero-repositorybox-popular-box">
                             <div class="hero-repositorybox-popular-box-title">
                                 <a href="#">NFT Market</a>
                                 <p>Public</p>
                             </div>
-                            <p>CSS, HTML</p>
+                            <div class="lang">
+                                <p>CSS, HTML</p>
+                                <div class="orange"></div>
+                            </div>
                         </div>
                         <div class="hero-repositorybox-popular-box">
                             <div class="hero-repositorybox-popular-box-title">
                                 <a href="#">NFT Market</a>
                                 <p>Public</p>
                             </div>
-                            <p>CSS, HTML</p>
+                            <div class="lang">
+                                <p>CSS, HTML</p>
+                                <div class="yellow"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="contiributions">
-                        <img src="./assets/img/image.png" width="900px" alt="">
+                        <div class="contributions-title">
+                            <h4>1,023 contiributions in the last year</h4>
+                        </div>
+                        <div class="contiributions-chart">
+                            <img src="./assets/img/image.png" alt="smth" width="730px">
+                            <div class="contributions-chart-year">
+                                <button class="year-btn">2025</button>
+                                <button class="year-bt">2024</button>
+                                <button class="year-bt">2023</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <div class="menu-sidebar">
-        <div class="menu-sidebar-title">
-            <img src="./assets/img/Git hub logo img.png" alt="Logo" loading="lazy">
-            <p class="close">x</p>
-        </div>
-        <div class="profile-sidebar-items">
-            <div class="profile-sidebar-items-box">
-                <i class="fa-solid fa-house"></i>
-                <p>Home</p>
+    <div class="menu-overview">
+        <div class="menu-sidebar">
+            <div class="menu-sidebar-title">
+                <img src="./assets/img/Git hub logo img.png" alt="Logo" loading="lazy">
+                <i class="fa-solid fa-x close"></i>
             </div>
-            <div class="profile-sidebar-items-box">
-                <i class="fa-solid fa-circle-dot"></i>
-                <p>Issues</p>
-            </div>
-            <div class="profile-sidebar-items-box">
-                <i class="fa-solid fa-code-pull-request"></i>
-                <p>Pull-request</p>
-            </div>
-            <div class="profile-sidebar-items-box">
-                <i class="fa-solid fa-table-cells"></i>
-                <p>Projects</p>
-            </div>
-            <div class="profile-sidebar-items-box">
-                <i class="fa-regular fa-message"></i>
-                <p>Discussions</p>
-            </div>
-            <div class="profile-sidebar-items-box">
-                <i class="fa-solid fa-desktop"></i>
-                <p>Codespaces</p>
-            </div>
-            <div class="profile-sidebar-items-box">
-                <i class="fa-solid fa-robot"></i>
-                <p>Copilot</p>
+            <div class="profile-sidebar-items">
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <p>Issues</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <p>Pull-request</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-table-cells"></i>
+                    <p>Projects</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-regular fa-message"></i>
+                    <p>Discussions</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-desktop"></i>
+                    <p>Codespaces</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Copilot</p>
+                </div>
+                <div class="horizantal-line"></div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Explore</p>
+                </div>
+                <div class="profile-sidebar-items-box">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Marketplace</p>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="profile-overview">
+        <div class="profile-active">
+            <div class="profile-active-title">
+                <div class="imgbox">
+                    <img src="./assets/img/Git hub logo img.png" alt="Logo" loading="lazy">
+                    <h4>IdentityNull</h4>
+                </div>
+                <div class="close-box">
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <i class="fa-solid fa-x profile-close"></i>
+                </div>
+            </div>
+            <div class="profile-active-items">
+                <div class="profile-active-items-box">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <p>Your status</p>
+                </div>
+                <div class="profile-horizantal-line"></div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your profile</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Your Repositories</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Your Copilot</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your Projects</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Your Stars</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your gists</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your organizations</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your enterpries</p>
+                </div>
+                <div class="profile-active-items-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your sponsors</p>
+                </div>
+            </div>
+    </div>
+
+    </div>
+    <div class="conversation">
+        <p>New conversation in</p>
+        <div class="conversation-items">
+            <i class="fa-regular fa-message"></i>
+            <p>Assistive</p>
+        </div>
+        <div class="conversation-horizantalline"></div>
+        <div class="conversation-items">
+            <i class="fa-solid fa-download"></i>
+            <p>Download for</p>
+        </div>
+        <div class="conversation-items">
+            <i class="fa-regular fa-circle-dot"></i>
+            <p>Settings</p>
+        </div>
+    </div>
 
 
     <script src="./main.js"></script>
