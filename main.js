@@ -62,3 +62,41 @@ smile.addEventListener("mouseleave", () => {
     status.style.opacity="0"
 })
 
+
+
+// search for users
+
+function handleEnter(event) {
+  if (event.key === "Enter") {
+    const userName = event.target.value.trim();
+    if (!userName) return;
+
+    const url = `https://api.github.com/search/users?q=${userName}`;
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        const users = data.items;
+        if (!users.length) {
+          alert("No users found.");
+          return;
+        }
+
+        const newTab = window.open();
+        newTab.document.write(`<h1>Search Results for "${userName}"</h1>`);
+        users.forEach(user => {
+          newTab.document.write(`
+            <div style="margin-bottom: 10px;">
+              <img src="${user.avatar_url}" width="50" height="50" />
+              <a href="${user.html_url}" target="_blank">${user.login}</a>
+            </div>
+          `);
+        });
+        newTab.document.close();
+      })
+      .catch(err => {
+        console.error("Error:", err);
+        alert("Something went wrong.");
+      });
+  }
+}
