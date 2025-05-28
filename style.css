@@ -168,6 +168,7 @@ body {
 .user-name {
     padding: 5px 8px;
     border-radius: 5px;
+    text-decoration: none !important;
 }
 
 .copilot-passive {
@@ -393,7 +394,7 @@ body {
     flex-direction: column;
     gap: 20px;
     min-height: 800px;
-    background: #0d1117;
+    background: #11161E;
     position: absolute;
     left: -400px;
     transition: all 0.3s ease-in-out;
@@ -457,7 +458,7 @@ body {
 }
 
 .profile-active {
-    background: #0d1117;
+    background: #11161E;
     position: absolute;
     top: 0;
     border-radius: 20px 0px 0px 20px;
@@ -707,6 +708,20 @@ a:hover {
     text-decoration: underline;
 }
 
+.achievements img {
+    position: relative;
+}
+.achievements img::before {
+    content: "";
+    width: 68px;
+    height: 68px;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border-radius: 50%; */
+}
+
 .status {
     position: absolute;
     bottom: 39px;
@@ -778,6 +793,12 @@ a:hover {
 .year-img2,
 .year-img3 {
     display: none;
+}
+
+.profile-active-horizantal-line {
+    width: 100%;
+    height: 1px;
+    background: #cccccc50;
 }
 
 
